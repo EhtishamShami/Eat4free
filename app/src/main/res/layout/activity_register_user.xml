@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zohaib.eaitit4free.RegisterUser">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/splashh"
+        android:foreground="#c0000000"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/centerHorizontalForRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25"
+        />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/firstname"
+        app:layout_constraintStart_toEndOf="@id/firstname"
+        app:layout_constraintEnd_toStartOf="@id/firstname"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        />
+
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter First Name"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#757575"
+            android:textColor="#000000"
+            android:text=""
+            android:padding="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/centerHorizontalForRegister"/>
+
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Last Name"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#757575"
+            android:textColor="#000000"
+            android:text=""
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/firstname"
+            app:layout_constraintEnd_toEndOf="@id/firstname"
+            app:layout_constraintTop_toBottomOf="@+id/centerHorizontalForRegister"
+        />
+
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="#757575"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@id/lastname"
+        app:layout_constraintEnd_toEndOf="@id/lastname"
+        app:layout_constraintTop_toBottomOf="@+id/lastname"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/remobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Re-Enter Mobile Number"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="#757575"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@id/mobile"
+        app:layout_constraintEnd_toEndOf="@id/mobile"
+        app:layout_constraintTop_toBottomOf="@+id/mobile"
+        android:layout_marginTop="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="#757575"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@id/remobile"
+        app:layout_constraintEnd_toEndOf="@id/remobile"
+        app:layout_constraintTop_toBottomOf="@+id/remobile"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="#757575"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@id/userEmail"
+        app:layout_constraintEnd_toEndOf="@id/userEmail"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/rePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Re-Enter Password"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="#757575"
+        android:textColor="#000000"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@id/enterPassword"
+        app:layout_constraintEnd_toEndOf="@id/enterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:id="@+id/dobtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/rePassword"
+        app:layout_constraintTop_toBottomOf="@+id/rePassword"
+        android:layout_marginTop="16dp"
+        />
+    <EditText
+        android:id="@+id/dateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="#000000"
+        android:hint="Date of Birth"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@id/enterPassword"
+        app:layout_constraintEnd_toEndOf="@id/enterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/dobtextview"
+        android:layout_marginTop="16dp"
+        />
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/dateOfBirth"
+        app:layout_constraintTop_toBottomOf="@id/dateOfBirth">
+    <RadioButton
+        android:id="@+id/malecheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:buttonTint="@android:color/white"
+        />
+
+    <RadioButton
+        android:id="@+id/femalecheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:buttonTint="@android:color/white"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Register"
+        android:onClick="registerUser"
+        app:layout_constraintTop_toBottomOf="@+id/gender"
+        app:layout_constraintStart_toStartOf="@id/dateOfBirth"
+        app:layout_constraintEnd_toEndOf="@id/dateOfBirth"
+        />
+    <TextView
+        android:id="@+id/alreadyUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Already User? "
+        android:textSize="24sp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintStart_toStartOf="@id/registerBtn"
+        app:layout_constraintEnd_toEndOf="@id/registerBtn"
+        app:layout_constraintTop_toBottomOf="@id/registerBtn"
+        />
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        android:onClick="openLoginActivity"
+        android:text=" Sign In"
+        app:layout_constraintStart_toEndOf="@id/alreadyUser"
+        app:layout_constraintTop_toBottomOf="@id/registerBtn"/>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

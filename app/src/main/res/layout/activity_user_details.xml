@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8D6E63"
+    tools:context="com.example.zohaib.eaitit4free.UserDetails">
+
+
+    <ImageView
+        android:id="@+id/appBarr2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFC107"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOW TO EATIT4FREE"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="@id/appBarr2"
+        app:layout_constraintRight_toRightOf="@id/appBarr2"
+        app:layout_constraintLeft_toLeftOf="@id/appBarr2"
+        app:layout_constraintBottom_toBottomOf="@id/appBarr2"/>
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/appBarr2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#795548">
+
+</ImageView>
+
+
+    <TextView
+        android:id="@+id/fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ehtisham ul haq"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/appBarr2"
+        app:layout_constraintStart_toStartOf="@id/appBarr2"
+        app:layout_constraintTop_toTopOf="@+id/banner"
+        app:layout_constraintBottom_toBottomOf="@+id/banner"
+        />
+
+
+    <TextView
+        android:id="@+id/orderTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orderlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/orderTextview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="16dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
